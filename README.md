@@ -1,0 +1,2 @@
+# React useEffect Hook Memory Leak
+This example demonstrates a common mistake in React's `useEffect` hook: forgetting to include a cleanup function to prevent memory leaks.  Specifically, the `setInterval` function within the `useEffect` is not properly stopped when the component unmounts. This can lead to unexpected behavior and resource issues. The solution shows how to add a cleanup function to stop the interval timer when the component is unmounted. 
